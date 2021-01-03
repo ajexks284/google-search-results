@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+	list-style-type: none;
+}
+
+.header {
+}
+
+.logo {
+	width: 100px;
+}
+
+.search-bar {
+	display: inline-block;
+	width: 600px;
+	padding: 1rem 1.5rem 1rem 3rem;
+	border: 1px solid #ddd;
+	border-radius: 50px;
+	background-image: url('https://img.icons8.com/android/24/000000/search.png');
+	background-repeat: no-repeat;
+	background-position: 97.5%;
+	background-size: 15px;
+}
+
+.search-bar:hover,
+.search-bar:focus {
+	box-shadow: 0 0 15px #f2f2f2;
+}
+
+.navbar {
+	display: flex;
+}
+
+.navbar ul {
+	display: flex;
+}
+
+.navbar ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+.navbar ul li a:hover {
+	text-decoration: underline;
+}
+
+.apps-icon {
+	width: 25px;
+	opacity: .6;
+}
+
+.apps-icon:hover {
+	opacity: 1;
+}
