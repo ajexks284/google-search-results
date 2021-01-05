@@ -84,10 +84,6 @@ li {
 	color: #70757a;
 }
 
-.navbar ul li a:hover {
-	text-decoration: underline;
-}
-
 .header ul {
 	display: flex;
 	align-items: center;
@@ -253,8 +249,7 @@ li {
 /* Pages Section */
 .pages {
 	width: 650px;
-	margin-top: 1.5rem;
-	margin-left: 11rem;
+	margin: 1.5rem 0 3.5rem 11rem;
 }
 
 .pages-wrapper {
@@ -299,4 +294,40 @@ li {
 	background: none;
 	color: #4285f4;
 	cursor: pointer;
+}
+
+.btn:hover {
+	text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+	background-color: #f2f2f2;
+	width: 100%;
+	padding: .1rem .5rem;
+	position: relative;
+	bottom: 0;
+	left: 0;
+}
+
+.footer ul {
+	display: flex;
+	align-items: center;
+	/* margin-left: 0;
+	margin-right: 0; */
+	margin-left: 7rem;
+}
+
+.footer ul li {
+	padding: 0 1rem;
+}
+
+.footer ul li a {
+	font-size: .9rem;
+	text-decoration: none;
+	color: #71757a;
+}
+
+.footer ul li a:hover {
+	color: #000;
 }
