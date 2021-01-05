@@ -40,22 +40,50 @@ li {
 	margin: 1rem 0;
 }
 
+.search-div {
+	position: relative;
+}
+
 .search-bar {
 	display: inline-block;
 	width: 600px;
-	padding: .75rem 1rem;
+	padding: .75rem 6.25rem .75rem 1.25rem;
 	font-size: .9rem;
 	border: 1px solid #ddd;
 	border-radius: 50px;
-	background-image: url('https://img.icons8.com/android/24/000000/search.png');
-	background-repeat: no-repeat;
-	background-position: 97.5%;
-	background-size: 15px;
 }
 
 .search-bar:hover,
 .search-bar:focus {
 	box-shadow: 0 0 15px #f2f2f2;
+}
+
+svg {
+	width: 25px;
+	position: absolute;
+	right: 4rem;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+svg.clear {
+	right: 4rem;
+	opacity: .5;
+}
+
+svg.search {
+	right: .75rem;
+	fill: #4285f4;
+}
+
+.search-bar-line {
+	position: absolute;
+	right: 3.25rem;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 30px;
+	border-left: 1px solid #dfe1e5;
 }
 
 .navbar {
@@ -151,7 +179,6 @@ li {
 	display: block;
 	text-decoration: none;
 	color: #1a0dab;
-	text-weight: bold;
 	font-size: 1.5rem;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -178,6 +205,7 @@ li {
 .people-also-ask-section .paa-title {
 	font-size: 1.25rem;
 	text-indent: .3rem;
+	padding-top: 0;
 }
 
 .people-also-ask-section div {
@@ -186,6 +214,10 @@ li {
 	padding: 1rem 0;
 	width: 100%;
 	position: relative;
+}
+
+.people-also-ask-section div:not(.paa-title) {
+	cursor: pointer;
 }
 
 .people-also-ask-section div:not(.paa-title)::after {
@@ -204,7 +236,7 @@ li {
 .feedback {
 	position: absolute;
 	right: .5rem;
-	margin-top: -3rem;
+	margin-top: -2.5rem;
 	text-decoration: none;
 	color: #70757a;
 	font-size: .75rem;
@@ -249,7 +281,7 @@ li {
 /* Pages Section */
 .pages {
 	width: 650px;
-	margin: 1.5rem 0 3.5rem 11rem;
+	margin: 1.5rem 0 2rem 11rem;
 }
 
 .pages-wrapper {
@@ -313,8 +345,6 @@ li {
 .footer ul {
 	display: flex;
 	align-items: center;
-	/* margin-left: 0;
-	margin-right: 0; */
 	margin-left: 7rem;
 }
 
